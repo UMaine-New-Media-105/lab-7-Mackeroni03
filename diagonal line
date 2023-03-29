@@ -1,0 +1,17 @@
+let ypos = 25;
+let ystep = 25;
+let xpos = 25;
+let xstep = 25;
+var offset = 0;
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(220);
+  for(let s = 0; s < 19; s++){
+  for(let q = 0; q < 1; q++){
+   ellipse(xpos+ (xstep*s)+offset, ypos+(ystep*s)+offset, 20, 20);
+  }}
+offset = 0
+}
